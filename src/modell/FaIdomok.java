@@ -20,13 +20,14 @@ public class FaIdomok {
     }
 
     public void run() {
-        for(FaIdom f: faidomok){
+        System.out.println("Idomok: ");
+        for (FaIdom f : faidomok) {
             System.out.println(f);
         }
         System.out.println("osszSuly: " + osszSuly());
         System.out.println("osszGombSuly:" + osszGombSuly());
-        System.out.println("minV: " + minV().terfogat());
-        System.out.println("maxV: " + maxV().terfogat());
+        System.out.println("minV: " + minV());
+        System.out.println("maxV: " + maxV());
     }
 
     public double osszSuly() {
@@ -43,7 +44,6 @@ public class FaIdomok {
         double osszGombSuly = 0;
         for (FaIdom f : faidomok) {
             if (f instanceof Gomb) {
-                System.out.println(f);
                 osszGombSuly += ((FaIdom) f).suly();
             }
         }
