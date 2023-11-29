@@ -8,9 +8,10 @@ public class Gomb extends FaIdom {
         this.sugar = sugar;
     }
 
+    @Override
     public double terfogat() {
 
-        return 0;
+        return 4 * (sugar * 2) * Math.PI;
     }
 
     @Override
