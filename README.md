@@ -1,0 +1,2 @@
+# Somogyi András
+## FaIdomok Program
